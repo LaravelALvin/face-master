@@ -1,5 +1,5 @@
 {
-  "homepage": "https://laravelalvin.github.io/face-master",
+  "homepage": "https://laravelalvin.github.io/face-master/examples/examples-browser",
   "name": "face-api.js",
   "version": "0.22.2",
   "description": "JavaScript API for face detection and face recognition in the browser with tensorflow.js",
