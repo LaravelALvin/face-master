@@ -110,7 +110,7 @@
             `${faceapi.utils.round(interpolatedAge, 0)} years`,
             `${gender} (${faceapi.utils.round(genderProbability)})`
           ],
-          ageGender.detection.box.topLeft
+          //ageGender.detection.box.topLeft
           
         )
         console.log(ageGender.age)
@@ -142,16 +142,12 @@
             surprised: "emoji/surprised.png"
         };
         
-        const emojiUrl = emojiUrls[maxExpression[0]] || "https://upload.wikimedia.org/wikipedia/commons/6/6e/Noto_Emoji_Oreo_1f610.svg"; // Default neutral face
-
+        const emojiUrl = emojiUrls[maxExpression[0]] || "emoji/neutral.png";
         // Update the HTML content
         document.getElementById("emoji-image").src = emojiUrl;
         document.getElementById("emoji-image").alt = maxExpression[0];
 
       }
-
-
-
       
       setTimeout(() => onPlay())
     }
